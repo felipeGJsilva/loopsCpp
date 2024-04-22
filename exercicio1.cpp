@@ -1,16 +1,20 @@
-#include <stdio.h>
+#include <iostream>
 
-int main(){
-    
-    int i = 1;
+int main() {
+    int numero;
 
-    while (i <= 1000){
+    printf("Insira um numero: ");
+    scanf("%d", &numero);
 
-        printf(" %d ",i);
+    int contador = 2; 
 
-        i++;
+    printf("Numeros pares entre 1 e %d:\n", numero);
+    while (contador <= numero) {
+        printf("%d ", contador);
+        contador += 2; 
     }
-
+    
     printf("\n");
-    return 0 ;
+
+    return 0;
 }
