@@ -13,7 +13,6 @@ int main() {
         printf("%d ", contador);
         contador += 2; 
     }
-    
     printf("\n");
 
     return 0;
