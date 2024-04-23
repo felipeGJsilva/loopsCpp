@@ -1,18 +1,19 @@
-#include <iostream>
+#include <stdio.h>
 
-int main() {
-    int numero;
-    int i = 0;
+int main(){
+    int num;
+    printf("Digite o numero inteiro: ");
+    scanf("%d",&num);
+    int i = 1;
+    int res = 0;
 
-    printf("Insira um numero inteiro: ");
-    scanf("%d", &numero);
-
-    while (numero != 0) {
-        i += numero % 10;
-        numero /= 10;
+    while (i <= num){
+        res += i;
+        i++;
+    
     }
 
-    printf("A soma dos digitos e: %d\n", i);
+    printf("%d\n",res);
 
-    return 0;
+    return 0 ;
 }
